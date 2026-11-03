@@ -41,6 +41,15 @@ html, body {
   pointer-events: none;
   text-shadow: 0 0 18px #000, 0 0 4px #000;
 }
+.brand::before {
+  content: '';
+  position: absolute;
+  inset: -18px auto auto -22px;
+  width: min(380px, 90vw);
+  height: 100px;
+  z-index: -1;
+  background: radial-gradient(ellipse at 30% 40%, rgba(5, 4, 3, 0.7), rgba(5, 4, 3, 0.4) 50%, transparent 75%);
+}
 .brand h1 {
   margin: 0;
   font: italic 400 clamp(1.55rem, 3.2vw, 2.35rem) / 1.1 var(--serif);
@@ -52,7 +61,7 @@ html, body {
   max-width: 34ch;
   font-size: 0.86rem;
   line-height: 1.45;
-  color: var(--dim);
+  color: #b9a982;
 }
 
 #labels { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
