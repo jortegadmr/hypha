@@ -37,7 +37,7 @@ TypeScript, WebGL2 (GLSL ES 3.00), Vite. No runtime dependencies. Needs WebGL2 a
 
 ```bash
 npm ci
-npm run dev      # http://localhost:5173
+npm run dev      # development server
 npm run build    # type-check and production build into dist/
 npm run preview
 ```
