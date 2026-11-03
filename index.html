@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="A GPU slime-mould simulation that wires up the capitals of Spain into glowing, organic highways. Click to feed it new cities." />
+    <meta name="theme-color" content="#050403" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23050403'/%3E%3Cpath d='M6 24C12 22 11 14 16 14S20 8 26 7M16 14c0 5 5 6 8 10M16 14C12 12 11 9 8 7' stroke='%23f2c14e' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <title>Mycelium Routes</title>
+  </head>
+  <body>
+    <canvas id="stage" role="img" aria-label="A glowing golden network of slime-mould filaments connecting Spanish capital cities"></canvas>
+    <div id="labels" aria-hidden="true"></div>
+    <div id="tip" role="status" hidden></div>
+
+    <header class="brand" id="brand">
+      <h1>Mycelium Routes</h1>
+      <p id="sub">A slime mould is wiring up the capitals of Spain. Click to feed it a new city.</p>
+    </header>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <nav class="panel" id="panel" aria-label="Simulation controls">
+      <div class="seg" role="group" aria-label="Preset">
+        <button type="button" data-preset="spain" aria-pressed="true">Spain</button>
+        <button type="button" data-preset="europe" aria-pressed="false">Europe</button>
+        <button type="button" data-preset="random" aria-pressed="false">Random</button>
+      </div>
+      <label class="slider">
+        <span>Speed</span>
+        <input id="speed" type="range" min="0.3" max="4" step="0.1" value="1.6" />
+      </label>
+      <label class="slider">
+        <span>Decay</span>
+        <input id="decay" type="range" min="0.9" max="0.99" step="0.001" value="0.965" />
+      </label>
+      <div class="actions">
+        <button type="button" id="regrow" title="Wipe the network and let it grow again">Regrow</button>
+        <button type="button" id="clear" title="Remove every city">Clear</button>
+        <button type="button" id="pause" aria-pressed="false" title="Pause or resume (space)">Pause</button>
+      </div>
+    </nav>
+
+    <section id="nogl" hidden>
+      <h2>Mycelium Routes</h2>
+      <p>This demo needs WebGL2 with floating-point render targets, which this browser or device does not provide.</p>
+      <p>Try a recent version of Chrome, Edge, Firefox or Safari with hardware acceleration enabled.</p>
+    </section>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
