@@ -1,10 +1,10 @@
-# Mycelium Routes
+# Hypha
 
 A slime mould wires up the capitals of Spain. Hundreds of thousands of agents crawl across a GPU trail map, leave a scent behind and follow each other's scent, and within seconds golden filaments appear between the cities and settle into an organic road network. Click to add a city and watch the network reorganise.
 
-![Mycelium Routes running the Spain preset](docs/demo.gif)
+![Hypha running the Spain preset](docs/demo.gif)
 
-**Live demo: https://jortegadmr.github.io/mycelium-routes/**
+**Live demo: https://jortegadmr.github.io/hypha/**
 
 ## Features
 

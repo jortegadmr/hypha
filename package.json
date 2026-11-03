@@ -1,5 +1,5 @@
 {
-  "name": "mycelium-routes",
+  "name": "hypha",
   "version": "1.0.0",
   "description": "GPU slime-mould (Physarum) simulation that wires up the capitals of Spain into organic highways.",
   "private": true,
